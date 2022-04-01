@@ -15,7 +15,7 @@ There is also an alternative way called **Passwordless Login**. A passwordless l
 
 I just recently implemented these magic links. Here's how it actually works 👇.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We recently created a passwordless login (aka magic link) on <a href="https://t.co/YJcixgGgra">https://t.co/YJcixgGgra</a>, so please give it a try! <a href="https://t.co/2NRULFw8jG">pic.twitter.com/2NRULFw8jG</a></p>&mdash; Tatsuya Oiwa (@tatsuyaoiw) <a href="https://twitter.com/tatsuyaoiw/status/1275667734454579201?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We recently created a passwordless login (aka magic link) on <a href="https://t.co/YJcixgGgra">https://t.co/YJcixgGgra</a>, so please give it a try! <a href="https://t.co/2NRULFw8jG">pic.twitter.com/2NRULFw8jG</a></p>&mdash; Tatsuya Oiwa (@hey_tatsuya) <a href="https://twitter.com/hey_tatsuya/status/1275667734454579201?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The overall communication flow between the user and the system is as follows.
 

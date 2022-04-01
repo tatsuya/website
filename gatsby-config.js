@@ -8,7 +8,7 @@ module.exports = {
     description: `Tatsuya Oiwa's personal blog.`,
     siteUrl: `https://tatsuyaoiw.com/`,
     social: {
-      twitter: `tatsuyaoiw`,
+      twitter: `hey_tatsuya`,
     },
   },
   plugins: [

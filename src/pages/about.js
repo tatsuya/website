@@ -48,7 +48,7 @@ const AboutPage = ({ location }) => {
 
       <p>Born and raised in a <a href="https://en.wikipedia.org/wiki/Taketoyo">small waterfront town in Aichi, Japan</a>, he moved across the Pacific Ocean to where he is today. His next life goal is to live on and work from as many continents and islands as possible.</p>
 
-      <p>You can also find me on <a href="https://twitter.com/tatsuyaoiw">Twitter</a>, <a href="https://instagram.com/tatsuyaoiw">Instagram</a> or <a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a>. Here’s my <a href="https://github.com/tatsuyaoiw/resume/blob/master/resume-2021.pdf">resume</a>.</p>
+      <p>You can also find me on <a href="https://twitter.com/hey_tatsuya">Twitter</a>, <a href="https://instagram.com/tatsuyaoiw">Instagram</a> or <a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a>. Here’s my <a href="https://github.com/tatsuyaoiw/resume/blob/master/resume-2021.pdf">resume</a>.</p>
 
       {avatar && (<Image fluid={avatar} alt={author?.name || ``}/>)}
 	  </Layout>

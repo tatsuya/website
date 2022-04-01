@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://tatsuyaoiw.com">
-    <img alt="Rice Ball" src="https://github.com/tatsuyaoiw/website/blob/master/content/assets/rice-ball.png?raw=true" width="60" />
+    <img alt="Rice Ball" src="https://github.com/tatsuya/website/blob/master/content/assets/rice-ball.png?raw=true" width="60" />
   </a>
 </p>
 <h1 align="center">
