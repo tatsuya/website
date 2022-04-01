@@ -3,7 +3,7 @@ module.exports = {
     title: `Tatsuya Oiwa`,
     author: {
       name: `Tatsuya`,
-      summary: `a Japanese software engineer living and working in Toronto.`,
+      summary: `I’m a Japanese software engineer living in Toronto.`,
     },
     description: `Tatsuya Oiwa's personal blog.`,
     siteUrl: `https://tatsuyaoiw.com/`,

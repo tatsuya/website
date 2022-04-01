@@ -53,7 +53,7 @@ const Bio = () => {
       )}
       {author?.name && (
         <p>
-          Hi there, I’m <Link to="/about">{author.name}</Link>, {author?.summary || null}
+          Hey, I’m <Link to="/about">{author.name}</Link>. {author?.summary || null}
           {` `}
           You can also find me on
           {` `}
