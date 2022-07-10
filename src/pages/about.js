@@ -28,7 +28,6 @@ const AboutPage = ({ location }) => {
 
   const siteTitle = data.site.siteMetadata.title
   const author = data.site.siteMetadata?.author
-  
   const avatar = data?.avatar?.childImageSharp?.fluid
   return (
     <Layout location={location} title={siteTitle}>
@@ -38,7 +37,7 @@ const AboutPage = ({ location }) => {
         <h2>Senior Developer at Shopify <span role="img" aria-label="shopping_bags">🛍️</span> Live and work in Toronto <span role="img" aria-label="canada">🇨🇦</span> Previously in New York <span role="img" aria-label="us">🇺🇸</span> and Tokyo <span role="img" aria-label="japan">🇯🇵</span></h2>
       </header>
 
-      <p>Tatsuya Oiwa is a software developer living in Toronto. He is a Senior Developer at <a href="https://www.shopify.com">Shopify</a>, where he works on things to <a href="https://www.shopify.com/careers/culture">make commerce better for everyone</a>. Like other Shopify folks around the world, he is currently working remotely from home. When he is not working, he enjoys Toronto’s chilly weather and diverse dining scene with his family.</p>
+      <p>Tatsuya Oiwa is a software developer living and working (from home) in Toronto. He works in the Discovery Experiences team at <a href="https://www.shopify.com">Shopify</a>, where he helps merchants sell by showing buyers the most relevant products. His current focus is on building and launching a new first-party Shopify app, <a href="https://www.shopify.com/editions/summer2022#search-discovery-app">Shopify Search and Discovery</a>, which enables merchants to increase conversions with customizable search, filtering, and product recommendations. This work includes developing the Ruby on Rails backend of the app, contributing to Shopify APIs and SDKs, and maintaining Shopify's core platform.</p>
 
       <p>Prior to coming to Toronto, Tatsuya lived in New York for about two years. He worked at <a href="https://qz.com">Quartz</a>, a global digital business news publisher, where he designed and developed the backend systems that drive Quartz’s paid subscription and email services. He helped build and grow the product, serving more than 25,000 paying members globally. He was also one of the first engineering hires at <a href="https://www.producthunt.com/posts/newspicks">NewsPicks USA</a>, the US branch of Japan’s leading business news platform, which was later acquired by and rebranded as Quartz.</p>
 
