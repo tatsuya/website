@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,9 +10,7 @@ const AboutPage = ({ location }) => {
     query AboutQuery {
       avatar: file(absolutePath: { regex: "/profile-pic-full.jpg/" }) {
         childImageSharp {
-          fluid(quality: 95) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(quality: 95, layout: FULL_WIDTH)
         }
       }
       site {
@@ -28,7 +26,7 @@ const AboutPage = ({ location }) => {
 
   const siteTitle = data.site.siteMetadata.title
   const author = data.site.siteMetadata?.author
-  const avatar = data?.avatar?.childImageSharp?.fluid
+  const avatar = getImage(data?.avatar?.childImageSharp?.gatsbyImageData)
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
@@ -49,7 +47,7 @@ const AboutPage = ({ location }) => {
 
       <p>You can also find me on <a href="https://twitter.com/hey_tatsuya">Twitter</a>, <a href="https://instagram.com/tatsuyaoiw">Instagram</a> or <a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a>. Here’s my <a href="https://github.com/tatsuyaoiw/resume/blob/master/resume-2021.pdf">resume</a>.</p>
 
-      {avatar && (<Image fluid={avatar} alt={author?.name || ``}/>)}
+      {avatar && (<GatsbyImage image={avatar} alt={author?.name || ``}/>)}
 	  </Layout>
   )
 }
