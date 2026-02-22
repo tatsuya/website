@@ -21,19 +21,20 @@ const BlogIndex = ({ data, location }) => {
             className="profile-avatar"
           />
         )}
-        <h2 style={{ margin: 0 }}>Software engineer at Shopify <span role="img" aria-label="shopping_bags">🛍️</span> Japanese immigrant living in Toronto. Dad of two.</h2>
+        <h2 style={{ margin: 0 }}>Software engineer at Shopify <span role="img" aria-label="shopping_bags">🛍️</span> Working on e-commerce search at scale. Dad of two girls.</h2>
       </header>
 
-      <p>Tatsuya Oiwa is a software engineer living and working in Toronto, Canada. He works on the Search team at <a href="https://www.shopify.com">Shopify</a>, where he builds the systems that power product discovery across Shopify's storefronts, the <a href="https://shop.app/">Shop app</a>, and agent commerce. His focus is on ingestion and indexing, the pipelines that get data into search at scale, and brings deep end-to-end knowledge across the stack from infrastructure to user experience.</p>
+      <p>I'm a software engineer at <a href="https://www.shopify.com">Shopify</a>, building the systems that power product discovery across storefronts, the <a href="https://shop.app/">Shop app</a>, and agent commerce. I focus on indexing pipelines, the infrastructure that feeds data into search at scale, working across the full stack from backend infrastructure to the user-facing product.</p>
 
-      <p>Born and raised in a <a href="https://en.wikipedia.org/wiki/Taketoyo">small waterfront town in Aichi, Japan</a>, he started his career in Tokyo at <a href="https://global.rakuten.com/corp/about/">Rakuten</a>, working in e-commerce search and platform engineering. He then moved to New York City, where he worked at <a href="https://www.producthunt.com/posts/newspicks">NewsPicks</a> and <a href="https://qz.com">Quartz</a> on news platforms and subscription products, before settling in Toronto. Outside of work, he is a dad of two girls and a beginner long distance runner.</p>
+      <p>Born and raised in Japan, I started my career in Tokyo at <a href="https://global.rakuten.com/corp/about/">Rakuten</a>, working in e-commerce search and platform engineering. I then moved to New York City, where I worked at <a href="https://www.producthunt.com/posts/newspicks">NewsPicks</a> and <a href="https://qz.com">Quartz</a> on news platforms and subscription products, before moving to Toronto.</p>
 
-      <p>You can also find him on <a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a> · <Link to="/ja">🇯🇵 日本語</Link></p>
+      <p>Outside of work, I'm a dad of two girls and a beginner long distance runner. You can find me on <a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a> or <a href="https://strava.app.link/ebTCg3TqX0b">Strava</a>.</p>
 
       {posts.length > 0 && (
         <>
           <hr />
           <h2>Writing</h2>
+          <p><Link to="/ja">🇯🇵 日本語</Link></p>
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
