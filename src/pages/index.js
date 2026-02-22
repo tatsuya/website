@@ -30,11 +30,12 @@ const BlogIndex = ({ data, location }) => {
 
       <p>Outside of work, I'm a dad of two girls and a beginner long distance runner. You can find me on <a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a> or <a href="https://strava.app.link/ebTCg3TqX0b">Strava</a>.</p>
 
+      <p><Link to="/ja">🇯🇵 Japanese</Link></p>
+
       {posts.length > 0 && (
         <>
           <hr />
           <h2>Writing</h2>
-          <p><Link to="/ja">🇯🇵 日本語</Link></p>
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug

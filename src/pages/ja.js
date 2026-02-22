@@ -21,8 +21,23 @@ const JaIndex = ({ data, location }) => {
             className="profile-avatar"
           />
         )}
-        <h2 style={{ margin: 0 }}>シニアソフトウェアエンジニア@Shopify。商品検索システムの開発をしています。カナダのトロント在住。二児の父。</h2>
+        <h2 style={{ margin: 0 }}>Shopifyの商品検索システムの開発をしています。カナダのトロント在住。二児の父。</h2>
       </header>
+
+      <p>シニアソフトウェアエンジニア＠Shopify。ストア内検索、マーケットプレイス検索、AIエージェント向けの検索APIを支えるシステムの開発に携わっています。検索エンジン向けのデータパイプラインを中心に、バックエンドからフロントエンドまでフルスタックで幅広く担当しています。</p>
+
+      <p>愛知県出身。楽天の検索チームにてキャリアをスタートした後、NewsPicksの米国展開をきっかけに渡米。ニューヨークの<a href="https://qz.com">Quartz</a>にてニュースプラットフォームの開発に従事。Shopifyへの転職を機にトロント移住。海外歴7年。</p>
+
+      <p>二人の娘の父。健康維持のために最近走り始めました。オンラインでは主に<a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a>と<a href="https://strava.app.link/ebTCg3TqX0b">Strava</a>で活動しています。</p>
+
+      <p><Link to="/">🇨🇦 英語</Link></p>
+
+      {posts.length > 0 && (
+        <>
+          <hr />
+          <h2>書きもの</h2>
+        </>
+      )}
 
       {posts.length === 0 ? (
         <p>記事がありません。</p>
@@ -60,8 +75,6 @@ const JaIndex = ({ data, location }) => {
           })}
         </ol>
       )}
-      <hr />
-      <p><Link to="/">🇺🇸 英語</Link></p>
     </Layout>
   )
 }
