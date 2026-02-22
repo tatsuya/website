@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -9,9 +9,9 @@ import SEO from "../components/seo"
 const ProjectsPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
-  const quartz = data.quartz?.childImageSharp?.fluid
-  const newspicks = data.newspicks?.childImageSharp?.fluid
-  const gilt = data.gilt?.childImageSharp?.fluid
+  const quartz = getImage(data.quartz)
+  const newspicks = getImage(data.newspicks)
+  const gilt = getImage(data.gilt)
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -19,7 +19,7 @@ const ProjectsPage = ({ data, location }) => {
       <h1>Hi there, here are some projects I’ve worked on.</h1>
       <h2>Quartz membership</h2>
       <p>
-        {quartz && (<Image fluid={quartz} alt={`quartz-membership`}/>)}
+        {quartz && (<GatsbyImage image={quartz} alt={`quartz-membership`}/>)}
       </p>
       <p><a href="https://qz.com/subscribe/">Quartz membership</a> is Quartz’s first paid subscription service launched in November 2018. I designed and developed its membership and billing system from scratch, and as of September 2020, it is used by over 21,000 paid members and over 1 million free members.</p>
       <p>This experience has given me extensive knowledge of building an online subscription business, including web and mobile payment platforms, subscription lifecyle and events, customer acquisition and retention strategies, internationalization, and security. In addition, I have worked on a number of other fine-grained user experience improvements, such as <a href="https://product.qz.com/implementing-passwordless-login-with-magic-links">passwordless authentication with magic links</a> and <a href="https://qz.com/gift/">gifting</a>.</p>
@@ -27,7 +27,7 @@ const ProjectsPage = ({ data, location }) => {
 
       <h2>NewsPicks</h2>
       <p>
-        {quartz && (<Image fluid={newspicks} alt={`newspicks`}/>)}
+        {newspicks && (<GatsbyImage image={newspicks} alt={`newspicks`}/>)}
       </p>
       <p><a href="https://www.producthunt.com/posts/newspicks/">NewsPicks</a> is a social platform where people discover, share and comment on business news. It was founded in Japan in 2013 and has since become the country’s most widely used business news platform. I’ve been working as a backend engineer for this ambitious startup since March 2018, helping them expand their services into the U.S. market.</p>
       <p>It has been challenging to bridge the gap between two very different markets, cultures and organizations in Japan and the U.S., and to quickly localize a large and legacy backend codebase into a new business.</p>
@@ -36,7 +36,7 @@ const ProjectsPage = ({ data, location }) => {
 
       <h2>Gilt Japan</h2>
       <p>
-        {quartz && (<Image fluid={gilt} alt={`gilt-japan`}/>)}
+        {gilt && (<GatsbyImage image={gilt} alt={`gilt-japan`}/>)}
       </p>
       <p>Coming soon...</p>
 
@@ -60,23 +60,17 @@ export const pageQuery = graphql`
     }
 	  quartz: file(absolutePath: { regex: "/projects/quartz-membership.jpg/" }) {
       childImageSharp {
-        fluid(quality: 95) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(quality: 95)
       }
     }
 	  newspicks: file(absolutePath: { regex: "/projects/newspicks.png/" }) {
       childImageSharp {
-        fluid(quality: 95) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(quality: 95)
       }
     }
 	  gilt: file(absolutePath: { regex: "/projects/gilt-japan.jpg/" }) {
       childImageSharp {
-        fluid(quality: 95) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(quality: 95)
       }
     }
   }
