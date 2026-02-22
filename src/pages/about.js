@@ -34,7 +34,7 @@ const AboutPage = ({ location }) => {
       <SEO title="About" />
       <header>
         <h1>Hi there, I’m Tatsuya <span role="img" aria-label="wave">👋</span></h1>
-        <h2>Senior Developer at Shopify <span role="img" aria-label="shopping_bags">🛍️</span> Japanese immigrant living in Toronto <span role="img" aria-label="japan">🇯🇵</span><span role="img" aria-label="canada">🇨🇦</span> Dad of two <span role="img" aria-label="family">👨‍👩‍👧‍👧</span></h2>
+        <h2>Senior Engineer at Shopify <span role="img" aria-label="shopping_bags">🛍️</span> Japanese immigrant living in Toronto <span role="img" aria-label="japan">🇯🇵</span><span role="img" aria-label="canada">🇨🇦</span> Dad of two <span role="img" aria-label="family">👨‍👩‍👧‍👧</span></h2>
       </header>
 
       <p>Tatsuya Oiwa is a software developer living and working (from home) in Toronto, Ontario, Canada. He works in the Discovery Experiences team at <a href="https://www.shopify.com">Shopify</a>, where he helps merchants sell by showing buyers the most relevant products. His current focus is on building and launching a new first-party Shopify app, <a href="https://www.shopify.com/editions/summer2022#search-discovery-app">Shopify Search and Discovery</a>, which enables merchants to increase conversions with customizable search, filtering, and product recommendations. This work includes developing the Ruby on Rails backend of the app, contributing to Shopify APIs and SDKs, and maintaining Shopify's core platform.</p>
