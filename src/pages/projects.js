@@ -15,7 +15,6 @@ const ProjectsPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Projects" />
       <h1>Hi there, here are some projects I’ve worked on.</h1>
       <h2>Quartz membership</h2>
       <p>
@@ -50,6 +49,10 @@ const ProjectsPage = ({ data, location }) => {
 }
   
 export default ProjectsPage
+
+export function Head() {
+  return <SEO title="Projects" />
+}
   
 export const pageQuery = graphql`
   query {

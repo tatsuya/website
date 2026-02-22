@@ -10,7 +10,6 @@ const JaIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="日本語" />
 {posts.length === 0 ? (
         <p>記事がありません。</p>
       ) : (
@@ -54,6 +53,10 @@ const JaIndex = ({ data, location }) => {
 }
 
 export default JaIndex
+
+export function Head() {
+  return <SEO title="日本語" lang="ja" />
+}
 
 export const pageQuery = graphql`
   query {

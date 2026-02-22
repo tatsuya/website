@@ -13,7 +13,6 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Tatsuya Oiwa" />
       <header>
         <h1>Hi there, I'm Tatsuya <span role="img" aria-label="wave">👋</span></h1>
         <h2>Software engineer at Shopify <span role="img" aria-label="shopping_bags">🛍️</span> Japanese immigrant living in Toronto. Dad of two.</h2>
@@ -70,6 +69,10 @@ const BlogIndex = ({ data, location }) => {
 }
 
 export default BlogIndex
+
+export function Head() {
+  return <SEO title="Tatsuya Oiwa" />
+}
 
 export const pageQuery = graphql`
   query {
