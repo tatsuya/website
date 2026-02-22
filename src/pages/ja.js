@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,10 +8,23 @@ import SEO from "../components/seo"
 const JaIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
+  const avatar = getImage(data?.avatar)
+  const author = data.site.siteMetadata?.author
 
   return (
     <Layout location={location} title={siteTitle}>
-{posts.length === 0 ? (
+      <header className="profile-header">
+        {avatar && (
+          <GatsbyImage
+            image={avatar}
+            alt={author?.name || ``}
+            className="profile-avatar"
+          />
+        )}
+        <h2 style={{ margin: 0 }}>シニアソフトウェアエンジニア@Shopify。商品検索システムの開発をしています。カナダのトロント在住。二児の父。</h2>
+      </header>
+
+      {posts.length === 0 ? (
         <p>記事がありません。</p>
       ) : (
         <ol style={{ listStyle: `none` }}>
@@ -60,9 +74,17 @@ export function Head() {
 
 export const pageQuery = graphql`
   query {
+    avatar: file(absolutePath: { regex: "/profile-pic-full.jpg/" }) {
+      childImageSharp {
+        gatsbyImageData(width: 120, height: 120, quality: 95, transformOptions: { cropFocus: CENTER })
+      }
+    }
     site {
       siteMetadata {
         title
+        author {
+          name
+        }
       }
     }
     allMarkdownRemark(
