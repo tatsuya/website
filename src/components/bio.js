@@ -49,15 +49,9 @@ const Bio = () => {
           }}
         />
       )}
-      {author?.name && (
-        <p>
-          Hey, I’m <Link to="/about">{author.name}</Link>. {author?.summary || null}
-          {` `}
-          You can also find me on
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a>.
-        </p>
-      )}
+      <p>
+        Written by <Link to="/">Tatsuya Oiwa</Link> — software engineer at Shopify building search infrastructure.
+      </p>
     </div>
   )
 }
