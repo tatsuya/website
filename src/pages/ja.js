@@ -26,7 +26,7 @@ const JaIndex = ({ data, location }) => {
 
       <p>シニアソフトウェアエンジニア＠Shopify。ストア内検索、マーケットプレイス検索、AIエージェント向け検索を支えるシステムの開発に携わっています。検索インデックス作成用のデータパイプラインを中心に、バックエンドからフロントエンドまでフルスタックで幅広く担当しています。</p>
 
-      <p>愛知県出身。楽天の検索チームにてキャリアをスタート。NewsPicksへの転職と同社の米国展開をきっかけに渡米し、ニューヨークの<a href="https://qz.com">Quartz</a>にてニュースアプリの開発に従事。その後Shopifyへの転職を経てトロント移住。海外在住8年目。</p>
+      <p>愛知県出身。楽天の検索チームにてキャリアをスタートし、NewsPicksへの転職と同社の米国展開をきっかけに渡米。ニューヨークの<a href="https://qz.com">Quartz</a>にてニュースアプリの開発に従事した後、Shopifyへの転職を機にトロント移住。現在海外8年目。</p>
 
       <p>二人の娘の父。健康維持のために最近走り始めました。オンラインでは主に<a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a>と<a href="https://strava.app.link/ebTCg3TqX0b">Strava</a>で活動しています。</p>
 
