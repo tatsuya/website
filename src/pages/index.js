@@ -23,7 +23,7 @@ const BlogIndex = ({ data, location }) => {
 
       <p>Born and raised in a <a href="https://en.wikipedia.org/wiki/Taketoyo">small waterfront town in Aichi, Japan</a>, he started his career in Tokyo at <a href="https://global.rakuten.com/corp/about/">Rakuten</a>, working in e-commerce search and platform engineering. He then moved to New York City, where he worked at <a href="https://www.producthunt.com/posts/newspicks">NewsPicks</a> and <a href="https://qz.com">Quartz</a> on news platforms and subscription products, before settling in Toronto. Outside of work, he is a dad of two girls and a beginner long distance runner.</p>
 
-      <p>You can also find him on <a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a>.</p>
+      <p>You can also find him on <a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a> · <Link to="/ja">🇯🇵 日本語</Link></p>
 
       {avatar && (<GatsbyImage image={avatar} alt={author?.name || ``}/>)}
 
@@ -86,7 +86,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+    allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      filter: { fields: { slug: { regex: "/^\\/en\\//" } } }
+    ) {
       nodes {
         excerpt
         fields {
