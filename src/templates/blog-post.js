@@ -62,12 +62,13 @@ const BlogPostTemplate = ({ data, location }) => {
 
 export default BlogPostTemplate
 
-export function Head({ data }) {
+export function Head({ data, pageContext }) {
   const post = data.markdownRemark
   return (
     <SEO
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
+      lang={pageContext.lang}
     />
   )
 }

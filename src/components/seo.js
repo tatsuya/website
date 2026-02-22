@@ -27,6 +27,12 @@ const SEO = ({ description, title, lang = "en" }) => {
     <>
       <html lang={lang} />
       <title>{pageTitle}</title>
+      {lang === "ja" && (
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+        />
+      )}
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />

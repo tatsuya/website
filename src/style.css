@@ -83,6 +83,10 @@ body {
   color: var(--color-text);
 }
 
+:lang(ja) {
+  font-family: "Noto Sans JP", var(--font-body);
+}
+
 footer {
   padding: var(--spacing-6) var(--spacing-0);
 }

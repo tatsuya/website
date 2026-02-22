@@ -52,6 +52,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           previousPostId,
           nextPostId,
+          lang: post.fields.slug.startsWith("/ja/") ? "ja" : "en",
         },
       })
     })
