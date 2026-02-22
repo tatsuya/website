@@ -357,3 +357,18 @@ a:focus {
     list-style-position: inside;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #6ab4f5;
+    --color-text: #d1d5db;
+    --color-text-light: #9ca3af;
+    --color-heading: #f9fafb;
+    --color-heading-black: #ffffff;
+    --color-accent: #374151;
+  }
+
+  body {
+    background-color: #111827;
+  }
+}
