@@ -1,6 +1,7 @@
 /* CSS Custom Properties Definitions */
 
 :root {
+  color-scheme: light dark;
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
   --maxWidth-sm: 24rem;

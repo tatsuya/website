@@ -26,6 +26,7 @@ const SEO = ({ description, title, lang = "en" }) => {
   return (
     <>
       <html lang={lang} />
+      <meta name="color-scheme" content="light dark" />
       <title>{pageTitle}</title>
       {lang === "ja" && (
         <link
