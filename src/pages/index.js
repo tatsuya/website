@@ -13,8 +13,15 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <header>
-        <h2>Software engineer at Shopify <span role="img" aria-label="shopping_bags">🛍️</span> Japanese immigrant living in Toronto. Dad of two.</h2>
+      <header className="profile-header">
+        {avatar && (
+          <GatsbyImage
+            image={avatar}
+            alt={author?.name || ``}
+            className="profile-avatar"
+          />
+        )}
+        <h2 style={{ margin: 0 }}>Software engineer at Shopify <span role="img" aria-label="shopping_bags">🛍️</span> Japanese immigrant living in Toronto. Dad of two.</h2>
       </header>
 
       <p>Tatsuya Oiwa is a software engineer living and working in Toronto, Canada. He works on the Search team at <a href="https://www.shopify.com">Shopify</a>, where he builds the systems that power product discovery across Shopify's storefronts, the <a href="https://shop.app/">Shop app</a>, and agent commerce. His focus is on ingestion and indexing, the pipelines that get data into search at scale, and brings deep end-to-end knowledge across the stack from infrastructure to user experience.</p>
@@ -22,8 +29,6 @@ const BlogIndex = ({ data, location }) => {
       <p>Born and raised in a <a href="https://en.wikipedia.org/wiki/Taketoyo">small waterfront town in Aichi, Japan</a>, he started his career in Tokyo at <a href="https://global.rakuten.com/corp/about/">Rakuten</a>, working in e-commerce search and platform engineering. He then moved to New York City, where he worked at <a href="https://www.producthunt.com/posts/newspicks">NewsPicks</a> and <a href="https://qz.com">Quartz</a> on news platforms and subscription products, before settling in Toronto. Outside of work, he is a dad of two girls and a beginner long distance runner.</p>
 
       <p>You can also find him on <a href="https://www.linkedin.com/in/tatsuyaoiw">LinkedIn</a> · <Link to="/ja">🇯🇵 日本語</Link></p>
-
-      {avatar && (<GatsbyImage image={avatar} alt={author?.name || ``}/>)}
 
       {posts.length > 0 && (
         <>
@@ -77,7 +82,7 @@ export const pageQuery = graphql`
   query {
     avatar: file(absolutePath: { regex: "/profile-pic-full.jpg/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 95)
+        gatsbyImageData(width: 120, height: 120, quality: 95, transformOptions: { cropFocus: CENTER })
       }
     }
     site {
