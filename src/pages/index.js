@@ -28,6 +28,9 @@ const BlogIndex = ({ data, location }) => {
       {avatar && (<GatsbyImage image={avatar} alt={author?.name || ``}/>)}
 
       {posts.length > 0 && (
+        <>
+          <hr />
+          <h2>Writing</h2>
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
@@ -60,6 +63,7 @@ const BlogIndex = ({ data, location }) => {
             )
           })}
         </ol>
+        </>
       )}
     </Layout>
   )
