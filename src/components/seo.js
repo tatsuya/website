@@ -8,6 +8,7 @@ const SEO = ({ description, title, lang = "en" }) => {
         siteMetadata {
           title
           description
+          siteUrl
           social {
             twitter
           }
@@ -17,6 +18,7 @@ const SEO = ({ description, title, lang = "en" }) => {
   `)
 
   const metaDescription = description || site.siteMetadata.description
+  const siteUrl = site.siteMetadata?.siteUrl
   const defaultTitle = site.siteMetadata?.title
   const pageTitle =
     defaultTitle && title !== defaultTitle
@@ -38,6 +40,8 @@ const SEO = ({ description, title, lang = "en" }) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
+      <meta property="og:image" content={`${siteUrl}/og-image.png`} />
+      <meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
       <meta name="twitter:card" content="summary" />
       <meta
         name="twitter:creator"
