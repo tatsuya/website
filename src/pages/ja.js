@@ -82,7 +82,7 @@ const JaIndex = ({ data, location }) => {
 export default JaIndex
 
 export function Head() {
-  return <SEO title="日本語" lang="ja" />
+  return <SEO title="🍙 Tatsuya Oiwa" lang="ja" />
 }
 
 export const pageQuery = graphql`

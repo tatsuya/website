@@ -77,7 +77,7 @@ const BlogIndex = ({ data, location }) => {
 export default BlogIndex
 
 export function Head() {
-  return <SEO title="Tatsuya Oiwa" />
+  return <SEO title="🍙 Tatsuya Oiwa" />
 }
 
 export const pageQuery = graphql`
