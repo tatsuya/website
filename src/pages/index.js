@@ -21,7 +21,7 @@ const BlogIndex = ({ data, location }) => {
             className="profile-avatar"
           />
         )}
-        <h2 style={{ margin: 0 }}>Software engineer at Shopify <span role="img" aria-label="shopping_bags">🛍️</span> Working on e-commerce search at scale. Dad of two girls.</h2>
+        <h2 style={{ margin: 0 }}>Software engineer at Shopify. Working on e-commerce search at scale. Dad of two girls.</h2>
       </header>
 
       <p>I'm a software engineer at <a href="https://www.shopify.com">Shopify</a>, building the systems that power product discovery across storefronts, the <a href="https://shop.app/">Shop app</a>, and agent commerce. I focus on indexing pipelines, the infrastructure that feeds data into search at scale, working across the full stack from backend infrastructure to the user-facing product.</p>

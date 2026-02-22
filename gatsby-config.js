@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Tatsuya Oiwa`,
+    title: `🍙 Tatsuya Oiwa`,
     author: {
       name: `Tatsuya`,
       summary: `I’m a Japanese software engineer living in Toronto.`,
