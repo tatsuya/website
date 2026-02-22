@@ -6,7 +6,7 @@ module.exports = {
       summary: `I’m a Japanese software engineer living in Toronto.`,
     },
     description: `Tatsuya Oiwa's personal blog.`,
-    siteUrl: `https://tatsuyaoiw.com/`,
+    siteUrl: `https://tatsuya.website`,
     social: {
       twitter: `hey_tatsuya`,
     },
