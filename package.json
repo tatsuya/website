@@ -8,10 +8,12 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@fontsource/merriweather": "^5.2.11",
+    "@fontsource/montserrat": "^5.2.8",
     "gatsby": "^5.16.1",
-    "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-catch-links": "^5.16.0",
     "gatsby-plugin-feed": "^5.16.0",
+    "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-manifest": "^5.16.0",
     "gatsby-plugin-offline": "^6.16.0",
     "gatsby-plugin-sharp": "^5.16.0",
@@ -27,9 +29,7 @@
     "postcss": "^8.5.6",
     "prismjs": "^1.22.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "prettier": "2.1.2"
